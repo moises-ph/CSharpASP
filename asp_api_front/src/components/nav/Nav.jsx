@@ -6,9 +6,7 @@ export default function Nav() {
     <>
         <nav className="navbar navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                    <h1>Usuarios API</h1>
-                </a>
+                <h1 className='navbar-brand'>Usuarios API</h1>
                 <small className='navbar-text'>Api de aprendizaje hecha en ASP.NET y C#</small>
             </div>
         </nav>

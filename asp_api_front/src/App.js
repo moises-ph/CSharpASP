@@ -71,11 +71,11 @@ function App() {
 
   const registrarUsuarios = async (e)=>{
     e.preventDefault();
-    let newUser = new User(e.target.elements.ID_Usuario.value,
-      e.target.elements.Nombres.value,
-      e.target.elements.Telefono.value,
-      e.target.elements.Correo.value,
-      e.target.elements.Ciudad.value
+    let newUser = new User(Id_input.current.value,
+      Nombres_input.current.value,
+      Telefono_input.current.value,
+      Correo_input.current.value,
+      Ciudad_input.current.value,
     );
     await axios.post(URL, newUser)
       .then(res => res.data ? console.log(res.data): new Error("Ocurrió un error al registarr el usuario"))
