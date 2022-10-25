@@ -48,8 +48,8 @@ function App() {
     listarUsuarios();
   }
 
-  const consUsuario = (e) =>{
-    console.log(e);
+  const consUsuario = async (e) =>{
+    await axios.get(URL + `/${e.target.value}`).then().catch();
   }
 
   useEffect(()=>{

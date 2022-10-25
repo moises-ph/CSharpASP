@@ -62,7 +62,7 @@ namespace AppAPI.Data
             ConexionBD objEst = new ConexionBD();
             List<Usuario> oListaUsuario = new List<Usuario>();
             string sentencia = $"EXECUTE usp_Consultar '{id}'";
-            if (objEst.ConsultarValorUnico(sentencia, false))
+            if (objEst.Consultar(sentencia, false))
             {
                 SqlDataReader reader = objEst.Reader;
                 reader.Read();
